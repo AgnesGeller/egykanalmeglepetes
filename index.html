@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Egy kanál meglepetés</title>
+
+  <!-- Google Fonts (ha szeretnéd cserélni, tedd ide a pontos fontokat) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <div class="logo">Egy kanál meglepetés</div>
+      <div class="cart">Kosár <span class="cart-count">0</span> <span class="cart-sum">0 Ft</span></div>
+      <button id="menu-btn" aria-label="Menü" class="menu-btn">Menü</button>
+    </div>
+
+    <nav id="main-nav" class="main-nav">
+      <ul>
+        <li><a href="#bemutatkozas">Bemutatkozás</a></li>
+        <li class="has-sub">Termékek
+          <ul class="sub">
+            <li><a href="#kanalak">Kanalazás</a></li>
+            <li><a href="#lucky">Lucky Ball</a></li>
+            <li><a href="#karkoto">Karkötő</a></li>
+            <li><a href="#pohar">Pohár</a></li>
+          </ul>
+        </li>
+        <li><a href="#otleteljunk">Ötleteljünk együtt!</a></li>
+        <li><a href="#visszajelzesek">Visszajelzések</a></li>
+        <li><a href="#gyik">GYIK</a></li>
+        <li><a href="#kapcsolat">Kapcsolat</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <!-- Ha az eredeti webnode-ról szeretnéd használni a képet, itt a domain-hivatkozás szerepelhet -->
+      <img alt="Hero kép" src="./assets/img/logo.jpg" onerror="this.style.display='none'">
+      <div class="hero-inner">
+        <h1>Egy kanál meglepetés</h1>
+        <a class="btn" href="#termekek">Vásárolj most</a>
+      </div>
+    </section>
+
+    <section id="bemutatkozas" class="section container">
+      <h2>Bemutatkozás</h2>
+      <p>Sziasztok, Eszti vagyok!</p>
+      <p>
+        A meglepetés kanalazást azért kezdtem el, mert TikTok-on sok helyen láttam hasonló videókat,
+        viszont úgy éreztem, hogy a legtöbb helyen nem igazán hasznos dolgokat kínálnak. Én szerettem volna kitűnni,
+        és olyan csajos, praktikus apróságokat adni, amiket tényleg örömmel lehet használni – nem pedig elfelejteni
+        vagy félretenni pár nap után.
+      </p>
+      <p>Emellett elkezdtem saját dupla falú poharakat is készíteni amit személyre szabottan is lehet rendelni!</p>
+      <p>A videókat különösen élvezem készíteni, hiszen mindig bemondom a rendelők nevét – így személyesebb élmény.</p>
+    </section>
+
+    <section id="termekek" class="section container products">
+      <h2>Legnépszerűbb termékek</h2>
+
+      <div class="categories">
+        <button class="cat-btn" data-cat="all">Minden termék</button>
+        <button class="cat-btn" data-cat="kanalak">Kanalak</button>
+        <button class="cat-btn" data-cat="poharak">Poharak</button>
+      </div>
+
+      <div class="product-grid">
+        <article class="product" data-cat="kanalak">
+          <img src="./assets/img/kanal.jpg" alt="Egy kanál">
+          <h3>Egy kanál</h3>
+          <p class="price">2 000 Ft -tól</p>
+          <a class="btn small" href="#">Megnézem</a>
+        </article>
+
+        <article class="product" data-cat="kanalak">
+          <img src="./assets/img/oriaskanal.jpeg" alt="ÓRIÁS kanál">
+          <h3>ÓRIÁS kanál</h3>
+          <p class="price">7 500 Ft</p>
+          <a class="btn small" href="#">Megnézem</a>
+        </article>
+
+        <article class="product" data-cat="poharak">
+          <img src="./assets/img/pohar.jpg" alt="Pohár">
+          <h3>Pohár</h3>
+          <p class="price">6 000 Ft</p>
+          <a class="btn small" href="#">Megnézem</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="otleteljunk" class="section container">
+      <h2>Ötleteljünk együtt!</h2>
+      <p>Van ötleted? Írj nekünk, szívesen megvalósítjuk!</p>
+    </section>
+
+    <section id="visszajelzesek" class="section container">
+      <h2>Visszajelzések</h2>
+      <p>Itt jelennek meg a vásárlói vélemények.</p>
+    </section>
+
+    <section id="gyik" class="section container">
+      <h2>GYIK</h2>
+      <p>Gyakran ismételt kérdések.</p>
+    </section>
+
+    <section id="kapcsolat" class="section container">
+      <h2>Kapcsolat</h2>
+      <address>
+        <p>Írj nekünk: <a href="mailto:info@egykanalmeglepetes.hu">info@egykanalmeglepetes.hu</a></p>
+      </address>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Minden jog fenntartva</p>
+      <p>Az oldalt a Webnode működteti</p>
+    </div>
+  </footer>
+
+  <!-- Cookie banner -->
+  <div id="cookie-banner" class="cookie-banner">
+    <p>Sütiket használunk, hogy biztosítsuk a weboldal megfelelő működését és biztonságát.</p>
+    <div>
+      <button id="accept-cookies" class="btn small">Összes elfogadása</button>
+      <button id="only-necessary" class="btn small ghost">Csak a legszükségesebbek</button>
+    </div>
+  </div>
+
+  <script src="./assets/script.js"></script>
+</body>
+</html>
